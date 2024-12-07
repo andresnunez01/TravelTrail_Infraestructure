@@ -28,7 +28,7 @@ services:
       - /volumes/nginx/html:/usr/share/nginx/html:rw
       - /var/run/docker.sock:/var/run/docker.sock:ro
  
-  mpox-api:
+  traveltrail-api:
       image: emiperezdev/traveltrail-api:latest
       container_name: traveltrail-api
       expose:
@@ -56,6 +56,8 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+    ports:
+    - "27018:27017"
     volumes:
       - mongo_db:/data/db
 
