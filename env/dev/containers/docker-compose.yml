@@ -51,7 +51,7 @@ services:
         VIRTUAL_PATH: /
   
   mongo:
-    image: mongo:latest
+    image: mongo
     container_name: mongo-traveltrail
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
