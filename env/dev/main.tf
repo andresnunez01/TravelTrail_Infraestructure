@@ -21,4 +21,5 @@ module "dev_vm" {
   MONGO_URL                  = var.MONGO_URL
   MAILER_EMAIL_DESTINATION   = var.MAILER_EMAIL_DESTINATION
 
+
 }
